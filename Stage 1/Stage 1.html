@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>My Notes</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <h1>My Introduction to Programming Notes</h1>
+  
+    <div class="internet">
+      <h2>How the Internet Works</h2>
+      <p>The <span class= "vocab">client</span> can be either the computer, the browser, or other device you are using to interface with the internet. The internet interacts with servers. The servers relay information through the internet and then the information is recieved by the client.
+    </p>
+  </div>
+  
+  <div class="languages">
+    <h2>Languages</h2>
+    <p>There are different languages of programing that give the computer different sets of instructions.</p>
+   
+    <ul class="lang">
+      <li><span class="vocab">HTTP</span> or HyperText Transfer Protocols is the language that the internet and servers use to communicate.</li>
+      <li><span class="vocab">HTML</span> or HyperText Markup Language is the language most websites are written in</li>
+      <li><span class="vocab">CSS</span> or Casscading Style Sheet is the style or look of a webpage. CSS interacts with the HTML text</li>
+      <li><span class="vocab">DOM</span> or Document Object Model which is a tree like structure that both CSS and HTML use. While not a language is important to the languages as it is the structure they are written in .
+    </ul>
+   
+    <div class="lang_info">
+      <p>With each Programing Language there are <span class="vocab">tags</span> (for HTML) and <span class="vocab">selectors</span> (for CSS) which are comands that tell how to interact with the content.</p>
+   
+      <div class="tags">
+        <h3>HTML Tags</h3>
+   
+        <ul class="html_tags">
+          <li> &lt;b&gt; text &lt;/b&gt; will bold the text inside</li>
+          <li> &lt;em&gt; text &lt;/em&gt; will put the text in italics for empasis</li>
+          <li> &lt;a herf= "url"&gt; text &lt;/a&gt; will creat a hyperlink for the text. <br>A <span class="vocab">hyperlink</span> is a redirection to another page or part of the page.</li>
+          <li> &lt;img src= "url" alt= "text"&gt; adds an image to your page or (if the image is unavailable) alternate text</li>
+          <li> &lt;p&gt; text  &lt;/p&gt;  will enclose text in a paragraph</li>
+          <li> &lt;br&gt; adds white space </li>
+          <li> &lt;div&gt; content &lt;/div&gt; creates a <em>box</em> element </li>
+          <li> &lt;span&gt; content  &lt;/span&gt; creates an <em>in-line</em> element </li>
+          <li> Adding class = "text" to a tag will add an ID to the tag.</li>
+        </ul>
+      </div>   
+      
+        <p>With HTML tags there are two different types of elements <em>box</em> and <em>in-line</em>. 
+          <br><span class="vocab">Box</span> elements create a box around text and other elements. Some examples of box elements are &lt;p&gt; and &lt;div&gt;. 
+          <br><span class="vocab">Inline</span> elements are in the line of the text. Some examples of inline elements are &lt;br&gt; and &lt;span&gt;.</p>
+    </div>
+   
+    <div class="lang_info">
+      <h3>CSS</h3>
+      <p>With CSS their are a few things we need to know before we move on to the tags. The order matters. In most cases we order things from the biggest element to the smallest but in CSS it orders from the smallest to the largest. An example of this is that the CSS could apply the style to a word, then a sentance, then a paragraph, then a page, then the document, ect. This is important to remember when you write your CSS. Some other things to know are how things are labeled in CSS.</p>
+   
+      <ul class="css_vocab">
+        <li><span class="vocab">Style</span> can refer to HTML elements, attribute, the general look of a page, or it can be a verb</li>
+        <li><span class="vocab">Rule</span> is a line of CSS code</li>
+        <li><span class="vocab">Property</span> is what you want to change</li>
+        <li><span class="vocab">Value</span> attributtes a value to a property</li>
+        <li><span class="vocab">Selector</span> is the HTML element you are applying the style to</li>
+        <li><span class="vocab">Class</span> a group of elements</li>
+        <li><span class="vocab">ID</span> a unique identifier</li>
+      </ul>
+  
+      <p class="css_works">When writing in CSS you write a rule set using this formula [ selector {property:value; property:value;}] each property:value; set is called a <span class="vocab">declaration</span></p>
+      <p> You can also add comments to your code for more information, ideas for later, or for other programers. To add a comment in HTML open it with &lt;!-- then write your comment. Be sure to close your comment with --&gt;. To add a comment in CSS open it with /* and close it with */. For more information on HTML and CSS tags and selectors click here for <a href="http://www.w3schools.com/html/default.asp">HTML</a> and here for <a href="http://www.w3schools.com/css/default.asp">CSS</a></p>
+    </div>
+  </div>
+  
+  <div class="box_model">
+    <h2>The Box Model</h2>
+    <p>The Box Model is a way to think about layout in CSS.</p>
+  
+    <ul class="box_model_vocab">
+      <li><span class="vocab">Content</span>The image, text, or other elements</li>
+      <li><span class="vocab">Padding</span>The space between the content and the botder. The color for the padding is the background color</li>
+      <li><span class="vocab">Border</span>Goes around the padding and the content. The color of the boarder is defined by the color property</li>
+      <li><span class="vocab">Margin</span>The space between boxes. The margin is transparent.</li>
+    </ul>
+  
+    <img src="box_model.jpg">
+    <p class="using_bm">To use the box model in CSS use the rule {box-sizing: border-box;} &lt;div&gt; are blocks and by defult they take up the entire width of the page. By adding the rule {display;flex} lets &lt;div&gt; elements apear next to each other. </p>
+  </div>
+  
+  <div class="program">
+    <h2>The Programming Way</h2>
+    <p>It is easy to thinkt hat you can just start typing out the HTML and the CSS and make a completed project however there are steps to take to make it easier.</p>
+    <p>Code, Test, Refine</p>
+  
+    <ol class="ctr">
+      <li> <b>Look for boxes</b>: if you are handed text, a mock up, or just told what you need to create the first step is to look for boxes in your work. These boxes will be the basis for how you write bothe the HTML and the CSS.</li>
+      <li> <b>Look for repeated styles and elements</b>: this will help sort the boxes into smaller and smaller boxes.</li>
+      <li><b>Write your HTML</b>: using the boxes and repeated style and elements to create clean clear code.</li>
+      <li><b>Write you CSS</b>: using the elements created in the HTML.</li>
+      <li><b>Test</b>: try out your code on different platforms.</li>
+      <li><b>Fix</b>: fix any issues in your code.</li>
+      <li><b>Repeat</b>: repeat steps 3 through 7 until your product looks how it should</li>
+    </ol>
+  </div>
+</body>
